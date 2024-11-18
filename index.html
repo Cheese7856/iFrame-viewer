@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No URL-s loaded</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <h1>iFrame viewer</h1>
+    <h3>I know, very boring</h3>
+
+    <div id="bar">
+      <input type="text" id="urlInput" class="bar-items" placeholder="Skriv inn URL" onkeydown="if (event.key === 'Enter') endreIframe()" />
+      <button id="change" class="bar-items" onclick="endreIframe()"><img src="icons/search.svg" alt="Search icon" /></button>
+    </div>
+
+    <div class="iframe-container">
+      <iframe id="myIframe" src="https://example.com" class="iframe"></iframe>
+      <button onclick="goFullScreen()" class="overlay-button"><img src="icons/fullscreen.svg" alt="Fullscreen icon" /></button>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
