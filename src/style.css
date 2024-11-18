@@ -1,0 +1,105 @@
+.iframe-container {
+  position: relative; /* Definer referanseramme for absolutte elementer */
+  width: 100%; /* Bredden på iframe/container */
+  height: 450px; /* Høyden på iframe/container */
+}
+
+.iframe {
+  width: 100%; /* Fyller containeren */
+  height: 100%; /* Fyller containeren */
+  border: none; /* Fjerner kantlinjen rundt iframe */
+}
+
+.overlay-button {
+  position: absolute; /* Plasserer knappen relativt til containeren */
+  top: 10px; /* Avstand fra toppen av containeren */
+  left: 10px; /* Avstand fra høyre kant av containeren */
+
+  height: 50px;
+  width: 50px;
+  padding: 0;
+}
+
+:root {
+  --bar-ut: 10px;
+  --bar-inn: 5px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: min(100px, 9vw);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: min(40px, 8vw);
+  opacity: 40%;
+}
+
+iframe {
+  border: 2px solid;
+
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+#bar {
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+  width: min(90%, 400px);
+  height: 50px;
+
+  display: flex;
+  gap: 5px;
+}
+
+#urlInput {
+  flex: 1;
+
+  border-top-left-radius: var(--bar-ut);
+  border-bottom-left-radius: var(--bar-ut);
+
+  border-top-right-radius: var(--bar-inn);
+  border-bottom-right-radius: var(--bar-inn);
+
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+#urlInput:focus {
+  background-color: #94b2e3;
+}
+
+#change {
+  aspect-ratio: 1/1;
+
+  border-top-left-radius: var(--bar-inn);
+  border-bottom-left-radius: var(--bar-inn);
+
+  border-top-right-radius: var(--bar-ut);
+  border-bottom-right-radius: var(--bar-ut);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.bar-items {
+  background-color: #94b2e3;
+  border: 0;
+  color: black;
+}
+
+#change:focus {
+  background-color: #6793db;
+}
