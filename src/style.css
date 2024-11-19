@@ -1,7 +1,7 @@
 .iframe-container {
   position: relative; /* Definer referanseramme for absolutte elementer */
   width: 100%; /* Bredden på iframe/container */
-  height: 450px; /* Høyden på iframe/container */
+  aspect-ratio: 16 / 9;
 }
 
 .iframe {
